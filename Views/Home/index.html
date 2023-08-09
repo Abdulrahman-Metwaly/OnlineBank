@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>O-Bank Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Header */
+        .hero {
+            background-image: linear-gradient(27deg, #004E95 34%, #013A6B 34%);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            color: white;
+        }
+
+            .hero .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                height: 100%;
+                margin-top: 100px;
+            }
+
+                .hero .content h1 {
+                    font-size: 55px;
+                }
+
+                .hero .content p {
+                    font-size: 23px;
+                }
+
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .hero * {
+                z-index: 10;
+            }
+
+        /* Icons */
+        .icons {
+            padding: 30px;
+        }
+
+            .icons h3 {
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .icons i {
+                background-color: #28a745;
+                color: white;
+                padding: 1rem;
+                border-radius: 50%;
+                margin-bottom: 15px;
+            }
+
+        /* Button */
+        .btn {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 30px;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .flex-items {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+            .flex-items > div {
+                padding: 20px;
+            }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 200px;
+        }
+
+        .bg-dark {
+            background: #333;
+            color: #fff;
+        }
+
+        .footer a {
+            color: white;
+        }
+
+            .footer a:hover {
+                color: red;
+            }
+
+        .footer .social > * {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body id="home" style="background-image: linear-gradient(27deg, #013A6B 50%, #004E95 50%);">
+    <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          
+                
+      </nav><!-- .navbar -->
+    <header class="hero">
+        <div class="content">
+            <h1>👋 Hello!</h1>
+            <h1>The secret of getting ahead is getting started</h1>
+            <p>We provide world-class financial assistance</p>
+            <a href="#about" class="btn">
+                <i class="fas fa-chevron-right"></i> Read More
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- About: Icons -->
+        <section id="about" class="icons bg-light">
+            <div class="flex-items">
+                <div>
+                    <i class="fas fa-university fa-2x"></i>
+                    <div>
+                        <h3>Investment Banking</h3>
+                        <p>Investment banks underwrite new debt and equity securities for all types of corporations, aid in the sale of securities, and help facilitate mergers and acquisitions.</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <div>
+                        <h3>Portfolio Manager</h3>
+                        <p>A portfolio manager holds great influence on a fund, no matter if that fund is a closed or open mutual fund, hedge fund, venture capital fund, or exchange-traded fund.</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-pencil fa-2x"></i>
+                    <div>
+                        <h3>Tax & Custodial</h3>
+                        <p>Taxes are a complex matter. The sophistication of investment strategies and related cross-border tax aspects can make it challenging to properly identify beneficial owners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-dark">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
